@@ -205,7 +205,6 @@
     <!-- Title for data source when creating or editing a contact that doesn't
          belong to a specific account.  This contact will only exist on the phone
          and will not be synced. -->
-    <string name="account_phone" product="tablet">Tablet-only, unsynced</string>
     <!-- Title for data source when creating or editing a contact that doesn't
          belong to a specific account.  This contact will only exist on the phone
          and will not be synced. -->
@@ -470,7 +469,6 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
 
     <!-- The failed reason shown when vCard exporter could not create a file for the vCard since
          there are too many files relevant to vCard. [CHAR LIMIT=NONE] -->
-    <string name="fail_reason_too_many_vcard" product="nosdcard">Too many vCard files are in the storage.</string>
     <!-- The failed reason shown when vCard exporter could not create a file for the vCard since
          there are too many files relevant to vCard. -->
     <string name="fail_reason_too_many_vcard" product="default">Too many vCard files are on the SD card.</string>
@@ -520,7 +518,6 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
     <!-- This error message shown when the user actually have no contact
          (e.g. just after data-wiping), or, data providers of the contact list prohibits their
          contacts from being exported to outside world via vcard exporter, etc. [CHAR LIMIT=NONE] -->
-    <string name="composer_has_no_exportable_contact" product="tablet">There are no exportable contacts. If you do have contacts on your tablet, some data providers may not allow the contacts to be exported from the tablet.</string>
     <!-- This error message shown when the user actually have no contact
          (e.g. just after data-wiping), or, data providers of the contact list prohibits their
          contacts from being exported to outside world via vcard exporter, etc. [CHAR LIMIT=NONE] -->
@@ -538,7 +535,6 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
     <string name="exporting_contact_failed_message">The contact data wasn\'t exported.\nReason: \"<xliff:g id="fail_reason">%s</xliff:g>\"</string>
 
     <!-- Dialog message shown when (USB) storage does not exist [CHAR LIMIT=30] -->
-    <string name="no_sdcard_message" product="nosdcard">No storage was found.</string>
     <!-- Dialog message shown when SDcard does not exist. [CHAR LIMIT=30] -->
     <string name="no_sdcard_message" product="default">No SD card was found.</string>
 
@@ -599,7 +595,6 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
     <!-- The failure message shown when the system could not find any vCard file.
          (with extension ".vcf" in (USB) storage.)
          [CHAR LIMIT=128] -->
-    <string name="import_failure_no_vcard_file" product="nosdcard">No vCard file found in storage.</string>
     <!-- The failure message shown when the system could not find any vCard file.
          (with extension ".vcf" in SDCard.)
          [CHAR LIMIT=128] -->
@@ -630,7 +625,6 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
     <string name="import_all_vcard_string">Import all vCard files</string>
 
     <!-- Dialog message shown when searching VCard data from (USB) storage [CHAR LIMIT=NONE] -->
-    <string name="searching_vcard_message" product="nosdcard">Searching for vCard data in storage\u2026</string>
     <!-- Dialog message shown when searching VCard data from SD Card. [CHAR LIMIT=NONE] -->
     <string name="searching_vcard_message" product="default">Searching for vCard data on SD card\u2026</string>
 
@@ -640,7 +634,6 @@ a        ren't members of any other group. [CHAR LIMIT=25] -->
 
     <!-- Dialog message shown when searching VCard data failed.
          An exact reason for the failure should [CHAR LIMIT=NONE] -->
-    <string name="scanning_sdcard_failed_message" product="nosdcard">The storage couldn\'t be scanned. (Reason: \"<xliff:g id="fail_reason">%s</xliff:g>\")</string>
     <!-- Dialog message shown when searching VCard data failed.
          An exact reason for the failure should [CHAR LIMIT=NONE] -->
     <string name="scanning_sdcard_failed_message" product="default">The SD card couldn\'t be scanned. (Reason: \"<xliff:g id="fail_reason">%s</xliff:g>\")</string>

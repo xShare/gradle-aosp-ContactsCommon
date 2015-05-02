@@ -91,7 +91,6 @@
     <!-- no translation found for list_filter_phones (3692815632088465422) -->
     <skip />
     <string name="view_updates_from_group" msgid="3310864388165884352">"Жаңыртууларды көрүү"</string>
-    <string name="account_phone" product="tablet" msgid="1143884271396601338">"Планшет үчүн гана, сихрондоштурулбаган"</string>
     <string name="account_phone" product="default" msgid="6104157990869081962">"Телефон үчүн гана, сихрондоштурулбаган"</string>
     <string name="nameLabelsGroup" msgid="1817502703362057154">"Аты"</string>
     <string name="nicknameLabelsGroup" msgid="6312795212164843246">"Каймана аты"</string>
@@ -178,7 +177,6 @@
     <string name="fail_reason_no_exportable_contact" msgid="3717046989062541369">"Экспортко жарактуу байланыш жок."</string>
     <string name="fail_reason_error_occurred_during_export" msgid="8426833603664168716">"Экспорттоо учурунда ката кетти: \"<xliff:g id="EXACT_REASON">%s</xliff:g>\"."</string>
     <string name="fail_reason_too_long_filename" msgid="3996610741248972232">"Талап кылынган файл аты өтө узун (\"<xliff:g id="FILENAME">%s</xliff:g>\")."</string>
-    <string name="fail_reason_too_many_vcard" product="nosdcard" msgid="8720294715223591581">"Сактагычта өтө көп vCard файлдар бар."</string>
     <string name="fail_reason_too_many_vcard" product="default" msgid="3793454448838716962">"SD-картада өтө көп vCard файлдар бар."</string>
     <string name="fail_reason_io_error" msgid="7736686553669161933">"I/O катасы"</string>
     <string name="fail_reason_low_memory_during_import" msgid="3277485820827338116">"Эс тутум жетишсиз. Файл өтө чоң окшойт."</string>
@@ -191,12 +189,10 @@
     <string name="exporting_contact_list_title" msgid="5663945499580026953">"Байланыш берилиштери экспорттолууда"</string>
     <string name="exporting_contact_list_message" msgid="3955619563572081300">"Сиздин байланыш берилиштериңиз <xliff:g id="FILE_NAME">%s</xliff:g> файлына экспорттолууда."</string>
     <string name="composer_failed_to_get_database_infomation" msgid="7801276776746351694">"Берилиштер корунун маалыматтарын алуу мүмкүн эмес."</string>
-    <string name="composer_has_no_exportable_contact" product="tablet" msgid="1534625366506752907">"Экспортко жарактуу байланыштар жок. Эгер байланыштар планшетиңизде болсо, айрым байланыштар камсыздоочулары байланыштарды телефондон экспорттоого жол бербеши мүмкүн."</string>
     <string name="composer_has_no_exportable_contact" product="default" msgid="7063040740576745307">"Экспортко жарактуу байланыштар жок. Эгер байланыштар телефонуңузда болсо, айрым берилиштер камсыздоочулары байланыштарды телефондон экспорттоого жол бербеши мүмкүн."</string>
     <string name="composer_not_initialized" msgid="6514403866246950877">"vCard түзүүчү туура эмес иштеп баштады."</string>
     <string name="exporting_contact_failed_title" msgid="6059039606302373945">"Экспорттоо мүмкүн эмес"</string>
     <string name="exporting_contact_failed_message" msgid="3922498776695333328">"Байланыш маалыматтары экспорттолгон жок.\nСебеби: \"<xliff:g id="FAIL_REASON">%s</xliff:g>\""</string>
-    <string name="no_sdcard_message" product="nosdcard" msgid="5131553549320038333">"Эч бир сактагыч табылган жок."</string>
     <string name="no_sdcard_message" product="default" msgid="3246805937562594626">"Эч бир SD-карта табылган жок."</string>
     <string name="confirm_export_message" msgid="7234189779260525384">"Сиздин байланыштар тизмеңиз <xliff:g id="VCARD_FILENAME">%s</xliff:g> файлына экспорттолот."</string>
     <string name="importing_vcard_description" msgid="7206609625359484356">"<xliff:g id="NAME">%s</xliff:g> импорттолууда"</string>
@@ -212,7 +208,6 @@
     <string name="vcard_unknown_filename" msgid="4832657686149881554">"байланыш"</string>
     <string name="caching_vcard_message" msgid="6635485116655518520">"vCard(дар) жергиликтүү убактылуу жайга топтолууда. Чыныгы импорт жакында башталат."</string>
     <string name="vcard_import_failed" msgid="4105296876768072508">"vCard импорт кылынган жок."</string>
-    <string name="import_failure_no_vcard_file" product="nosdcard" msgid="2066107150525521097">"Сактагычта эч бир vCard файл табылган жок."</string>
     <string name="import_failure_no_vcard_file" product="default" msgid="1748300468382501403">"SD-картада эч бир vCard файл табылган жок."</string>
     <string name="nfc_vcard_file_name" msgid="305679412445157370">"Байланыш NFC аркылуу алынды"</string>
     <string name="confirm_export_title" msgid="3240899428149018226">"Байланыштар экспорттолсунбу?"</string>
@@ -220,10 +215,8 @@
     <string name="import_one_vcard_string" msgid="6199149175802496361">"Бир vCard файлды импорттоо"</string>
     <string name="import_multiple_vcard_string" msgid="8931879029943141122">"Бир нече vCard файлдарын импорттоо"</string>
     <string name="import_all_vcard_string" msgid="1037495558362397535">"Бардык vCard файлдарды импорттоо"</string>
-    <string name="searching_vcard_message" product="nosdcard" msgid="2703499592557555234">"Сактагычта vCard берилиштери изделүүдө..."</string>
     <string name="searching_vcard_message" product="default" msgid="6108691847266062338">"SD-картада vCard берилиштери изделүүдө..."</string>
     <string name="caching_vcard_title" msgid="9185299351381102305">"Топтоо"</string>
-    <string name="scanning_sdcard_failed_message" product="nosdcard" msgid="8442457519490864500">"Сактагычты скандоо мүмкүн эмес. (Себеби: \"<xliff:g id="FAIL_REASON">%s</xliff:g>\")"</string>
     <string name="scanning_sdcard_failed_message" product="default" msgid="1409798274361146091">"SD-картаны скандоо мүмкүн эмес. (Себеби: \"<xliff:g id="FAIL_REASON">%s</xliff:g>\")"</string>
     <string name="progress_notifier_message" msgid="359931715339778107">"<xliff:g id="CURRENT_NUMBER">%s</xliff:g>/<xliff:g id="TOTAL_NUMBER">%s</xliff:g>: <xliff:g id="NAME">%s</xliff:g> импорттолууда"</string>
     <string name="export_to_sdcard" product="default" msgid="3665618085563543169">"Сактагычка экспорттоо"</string>
