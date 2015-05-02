@@ -888,6 +888,11 @@ public class ImportVCardActivity extends Activity {
 
     @Override
     protected Dialog onCreateDialog(int resId, Bundle bundle) {
+                /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
         switch (resId) {
             case R.id.dialog_searching_vcard: {
                 if (mProgressDialogForScanVCard == null) {
@@ -961,7 +966,7 @@ public class ImportVCardActivity extends Activity {
                     .setPositiveButton(android.R.string.ok, mCancelListener);
                 return builder.create();
             }
-        }
+        }//*/
 
         return super.onCreateDialog(resId, bundle);
     }

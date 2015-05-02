@@ -28,9 +28,9 @@ import android.util.Patterns;
 
 import com.android.contacts.common.R;
 
-import com.android.i18n.phonenumbers.NumberParseException;
-import com.android.i18n.phonenumbers.PhoneNumberUtil;
-import com.android.i18n.phonenumbers.Phonenumber.PhoneNumber;
+import com.google.i18n.phonenumbers.NumberParseException;
+import com.google.i18n.phonenumbers.PhoneNumberUtil;
+import com.google.i18n.phonenumbers.Phonenumber.PhoneNumber;
 import com.google.common.base.Preconditions;
 
 /**

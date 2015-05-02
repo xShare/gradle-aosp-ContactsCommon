@@ -57,7 +57,6 @@ import android.widget.ImageView;
 import com.android.contacts.common.lettertiles.LetterTileDrawable;
 import com.android.contacts.common.util.BitmapUtil;
 import com.android.contacts.common.util.UriUtils;
-
 import com.google.common.collect.Lists;
 import com.google.common.collect.Sets;
 

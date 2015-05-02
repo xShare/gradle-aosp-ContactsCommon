@@ -1,3 +1,6 @@
+apply plugin: 'com.android.library'
+//apply plugin: 'com.android.application'
+
 buildscript {
 
     repositories {
@@ -9,9 +12,14 @@ buildscript {
     }
 }
 
-apply plugin: 'android'
-
 dependencies {
+    compile 'com.android.support:support-v4:22.0'
+    compile 'com.android.support:support-v13:22.1.1'
+    compile files('libs/guava-18.0.jar')
+    compile project(':PhoneCommon')
+    compile files('libs/libphonenumber-6.2.jar')
+    compile files('libs/geocoder-2.9.jar')
+    compile project(':vcard')
 }
 
 android {
@@ -35,5 +43,9 @@ android {
         }
 
         instrumentTest.setRoot('tests')
+    }
+    // FIXME shold Remove
+    lintOptions {
+        abortOnError false
     }
 }

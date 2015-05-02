@@ -224,6 +224,11 @@ public class ExportVCardActivity extends Activity implements ServiceConnection,
 
     @Override
     protected Dialog onCreateDialog(int id, Bundle bundle) {
+                /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
         switch (id) {
             case R.id.dialog_export_confirmation: {
                 return new AlertDialog.Builder(this)
@@ -263,7 +268,7 @@ public class ExportVCardActivity extends Activity implements ServiceConnection,
                         .setMessage(R.string.no_sdcard_message)
                         .setPositiveButton(android.R.string.ok, this).create();
             }
-        }
+        }//*/
         return super.onCreateDialog(id, bundle);
     }
 

@@ -98,6 +98,11 @@ public class SelectAccountActivity extends Activity {
 
     @Override
     protected Dialog onCreateDialog(int resId, Bundle bundle) {
+                /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
         switch (resId) {
             case R.string.import_from_sdcard: {
                 if (mAccountSelectionListener == null) {
@@ -108,7 +113,7 @@ public class SelectAccountActivity extends Activity {
                         mAccountSelectionListener,
                         new CancelListener());
             }
-        }
+        }//*/
         return super.onCreateDialog(resId, bundle);
     }
 }

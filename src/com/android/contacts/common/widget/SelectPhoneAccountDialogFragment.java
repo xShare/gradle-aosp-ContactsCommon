@@ -188,16 +188,16 @@ public class SelectPhoneAccountDialogFragment extends DialogFragment {
             }
 
             PhoneAccountHandle accountHandle = getItem(position);
-            PhoneAccount account = mTelecomManager.getPhoneAccount(accountHandle);
+            PhoneAccount account = null; //FIXME mTelecomManager.getPhoneAccount(accountHandle);
             holder.labelTextView.setText(account.getLabel());
             if (account.getAddress() == null ||
                     TextUtils.isEmpty(account.getAddress().getSchemeSpecificPart())) {
                 holder.numberTextView.setVisibility(View.GONE);
             } else {
                 holder.numberTextView.setVisibility(View.VISIBLE);
-                holder.numberTextView.setText(
+                holder.numberTextView.setText(null /*FIXME
                         PhoneNumberUtils.ttsSpanAsPhoneNumber(
-                                account.getAddress().getSchemeSpecificPart()));
+                                account.getAddress().getSchemeSpecificPart())*/);
             }
             holder.imageView.setImageDrawable(account.createIconDrawable(getContext()));
             return rowView;

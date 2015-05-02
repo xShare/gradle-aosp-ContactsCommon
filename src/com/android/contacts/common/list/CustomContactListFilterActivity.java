@@ -687,6 +687,11 @@ public class CustomContactListFilterActivity extends Activity
 
     /** {@inheritDoc} */
     public void onClick(View view) {
+                /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
         switch (view.getId()) {
             case R.id.btn_done: {
                 this.doSaveAction();
@@ -696,7 +701,7 @@ public class CustomContactListFilterActivity extends Activity
                 this.finish();
                 break;
             }
-        }
+        }//*/
     }
 
     /**

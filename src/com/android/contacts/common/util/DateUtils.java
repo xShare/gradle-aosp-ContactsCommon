@@ -182,13 +182,15 @@ public class DateUtils {
         }
     }
 
+    public  static final char    DATE                   =    'd';
+    public  static final char    MONTH                  =    'M';
     public static boolean isMonthBeforeDay(Context context) {
         char[] dateFormatOrder = DateFormat.getDateFormatOrder(context);
         for (int i = 0; i < dateFormatOrder.length; i++) {
-            if (dateFormatOrder[i] == DateFormat.DATE) {
+            if (dateFormatOrder[i] == /*DateFormat.*/DATE) {
                 return false;
             }
-            if (dateFormatOrder[i] == DateFormat.MONTH) {
+            if (dateFormatOrder[i] == /*DateFormat.*/MONTH) {
                 return true;
             }
         }

@@ -155,6 +155,11 @@ public class ImportExportDialogFragment extends DialogFragment
             public void onClick(DialogInterface dialog, int which) {
                 boolean dismissDialog;
                 final int resId = adapter.getItem(which).mChoiceResourceId;
+                        /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
                 switch (resId) {
                     case R.string.import_from_sim:
                     case R.string.import_from_sdcard: {
@@ -183,7 +188,7 @@ public class ImportExportDialogFragment extends DialogFragment
                 }
                 if (dismissDialog) {
                     dialog.dismiss();
-                }
+                }//*/
             }
         };
         return new AlertDialog.Builder(getActivity())
@@ -289,7 +294,7 @@ public class ImportExportDialogFragment extends DialogFragment
         return TextUtils.expandTemplate(
                 getString(R.string.import_from_sim_summary),
                 name,
-                PhoneNumberUtils.ttsSpanAsPhoneNumber(record.getNumber()));
+                null /*FIXME PhoneNumberUtils.ttsSpanAsPhoneNumber(record.getNumber())*/);
     }
 
     private static class AdapterEntry {
@@ -302,9 +307,9 @@ public class ImportExportDialogFragment extends DialogFragment
             mChoiceResourceId = resId;
             mSubscriptionId = subId;
         }
-
+        public static final int INVALID_SUBSCRIPTION_ID = -1;
         public AdapterEntry(String label, int resId) {
-            this(label, resId, SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+            this(label, resId, /*SubscriptionManager.*/INVALID_SUBSCRIPTION_ID);
         }
     }
 }

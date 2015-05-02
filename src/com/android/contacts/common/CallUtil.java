@@ -32,6 +32,10 @@ import com.android.phone.common.PhoneConstants;
  */
 public class CallUtil {
 
+    public static final String ACTION_CALL_PRIVILEGED = "android.intent.action.CALL_PRIVILEGED";
+    public static final String EXTRA_START_CALL_WITH_VIDEO_STATE = "android.telecom.extra.START_CALL_WITH_VIDEO_STATE";
+    public static final String EXTRA_PHONE_ACCOUNT_HANDLE = "android.telecom.extra.PHONE_ACCOUNT_HANDLE";
+
     /**
      * Return an Intent for making a phone call. Scheme (e.g. tel, sip) will be determined
      * automatically.
@@ -129,13 +133,13 @@ public class CallUtil {
      */
     public static Intent getCallIntent(
             Uri uri, String callOrigin, PhoneAccountHandle accountHandle, int videoState) {
-        final Intent intent = new Intent(Intent.ACTION_CALL_PRIVILEGED, uri);
-        intent.putExtra(TelecomManager.EXTRA_START_CALL_WITH_VIDEO_STATE, videoState);
+        final Intent intent = new Intent(/*Intent.*/ACTION_CALL_PRIVILEGED, uri);
+        intent.putExtra(/*TelecomManager.*/EXTRA_START_CALL_WITH_VIDEO_STATE, videoState);
         if (callOrigin != null) {
             intent.putExtra(PhoneConstants.EXTRA_CALL_ORIGIN, callOrigin);
         }
         if (accountHandle != null) {
-            intent.putExtra(TelecomManager.EXTRA_PHONE_ACCOUNT_HANDLE, accountHandle);
+            intent.putExtra(/*TelecomManager.*/EXTRA_PHONE_ACCOUNT_HANDLE, accountHandle);
         }
 
         return intent;

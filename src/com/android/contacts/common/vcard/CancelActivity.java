@@ -82,6 +82,11 @@ public class CancelActivity extends Activity implements ServiceConnection {
 
     @Override
     protected Dialog onCreateDialog(int id, Bundle bundle) {
+                /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
         switch (id) {
         case R.id.dialog_cancel_confirmation: {
             final String message;
@@ -108,7 +113,7 @@ public class CancelActivity extends Activity implements ServiceConnection {
         default:
             Log.w(LOG_TAG, "Unknown dialog id: " + id);
             break;
-        }
+        }//*/
         return super.onCreateDialog(id, bundle);
     }
 

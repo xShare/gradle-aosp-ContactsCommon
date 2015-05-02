@@ -70,11 +70,12 @@ public class AccountSelectionUtil {
             mSubscriptionId = subscriptionId;
         }
 
+        public static final int INVALID_SUBSCRIPTION_ID = -1;
         public AccountSelectedListener(Context context, List<AccountWithDataSet> accountList,
                 int resId) {
             // Subscription id is only needed for importing from SIM card. We can safely ignore
             // its value for SD card importing.
-            this(context, accountList, resId, SubscriptionManager.INVALID_SUBSCRIPTION_ID);
+            this(context, accountList, resId, /*SubscriptionManager.*/INVALID_SUBSCRIPTION_ID);
         }
 
         public void onClick(DialogInterface dialog, int which) {
@@ -162,6 +163,11 @@ public class AccountSelectionUtil {
 
     public static void doImport(Context context, int resId, AccountWithDataSet account,
             int subscriptionId) {
+        /* FIXME
+        // Validates using resource IDs in a switch statement in Android library module.
+        // Resource IDs are non final in the library projects since SDK tools r14,
+        // means that the library code cannot treat these IDs as constants
+
         switch (resId) {
             case R.string.import_from_sim: {
                 doImportFromSim(context, account, subscriptionId);
@@ -172,6 +178,7 @@ public class AccountSelectionUtil {
                 break;
             }
         }
+        //*/
     }
 
     public static void doImportFromSim(Context context, AccountWithDataSet account,
