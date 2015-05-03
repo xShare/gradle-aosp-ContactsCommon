@@ -27,12 +27,14 @@ import android.telecom.VideoProfile;
 import com.android.contacts.common.util.PhoneNumberHelper;
 import com.android.phone.common.PhoneConstants;
 
+import cn.purplechen.utils.AppUtils;
+
 /**
  * Utilities related to calls.
  */
 public class CallUtil {
 
-    public static final String ACTION_CALL_PRIVILEGED = "android.intent.action.CALL_PRIVILEGED";
+    public static final String ACTION_CALL_PRIVILEGED = AppUtils.isSystemApp() ? "android.intent.action.CALL_PRIVILEGED" : Intent.ACTION_CALL;
     public static final String EXTRA_START_CALL_WITH_VIDEO_STATE = "android.telecom.extra.START_CALL_WITH_VIDEO_STATE";
     public static final String EXTRA_PHONE_ACCOUNT_HANDLE = "android.telecom.extra.PHONE_ACCOUNT_HANDLE";
 
